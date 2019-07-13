@@ -13,3 +13,4 @@ git branch -d name
 
 git conflict11111
 
+git checkout . #
