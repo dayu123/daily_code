@@ -16,4 +16,5 @@ Object.defineProperty(obj1,'age',{
 
 })
 
-
+//gkwd
+//gkwd
