@@ -1,22 +1,107 @@
-function callSomeFunc(callBack, someArguments) {
-	return callBack(someArguments);
-}
+var num = 3;
+console.log(num.toString(2));
+console.log(num.toString(8));
+console.log(num.toString(16));
 
-function add(obj) {
-	return obj.a + obj.b;
-}
+console.log(num.toFixed(2));
+console.log(num.toString(16));
+console.log(num.toString(16));
 
-console.log(callSomeFunc(add, { a: 5, b: 6 }));
-
-
-_.each([1, 2, 3], (item) => {
-	console.log(item);
-})
-
+var num1 = 34.5;
+console.log(Math.floor(num1));
+console.log(Math.ceil(num1));
+console.log(Math.round(num1));
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function callSomeFunc(callBack, someArguments) {
+// 	return callBack(someArguments);
+// }
+
+// function add(obj) {
+// 	console.log('add', arguments, '-------', arguments.callee.caller);
+// 	return obj.a + obj.b;
+// }
+
+// console.log(callSomeFunc(add, { a: 5, b: 6 }));
+
+
+// var ary1 = [3, 1, 234, 56, 6];
+// console.log(ary1.sort((a, b) => {
+// 	return b - a;
+// }));
+
+
+// function sayName(a, bc, d) {
+// 	console.log('length', arguments.length);
+// 	console.log(arguments.callee.lenght);
+// }
+
+// console.log(sayName.length);
+
+
+// window.name = 'cuiyun';
+// person = { name: 'gk' };
+
+// function applyFunc(a, c) {
+// 	console.log(arguments.callee.caller, 'add', a + c);
+// }
+
+// applyFunc();
+
+// applyFunc.call(person);
+// applyFunc.apply(person);
+
+// var apply1 = applyFunc.bind(person);
+// apply1();
+
+
+// function applyFunc1(aa, bb) {
+// 	return applyFunc.apply(this, arguments);
+// }
+
+// applyFunc1(34, 34);
+
+// function applyFunc2(cc, dd) {
+// 	return applyFunc.call(this, 23, 23);
+// }
+
+// applyFunc2();
+
+
+
+
+// applyFunc.apply(this, [1, 2])();
+// applyFunc.call(this, 3, 5)();
 
 
 

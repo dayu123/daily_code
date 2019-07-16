@@ -38,17 +38,6 @@ Object.defineProperties(book, {
         set: function (numyear) {
             console.log('set year')
             book._year = numyear;
-            // if (numyear > 2004) {
-            //     book._year = numyear;
-            //     let dif = numyear - 2004;
-            //     console.log('numyear - 2004', dif)
-
-            //     console.log('book.edition1', book.edition)
-            //     book.edition += (dif);
-            //     console.log('book.edition2', book.edition)
-            //     book.edition++;
-            //     console.log('book.edition3', book.edition)
-            // }
         }
 
     }
@@ -58,3 +47,27 @@ Object.defineProperties(book, {
 
 
 
+
+
+// "use strict"
+var person = {};
+Object.defineProperty(person, 'name', {
+    configurable: false,
+    value: 'John',
+})
+
+var person1 = {};
+person1.name = 'nihao';
+
+console.log('1', person.name);
+delete person.name;
+console.log('2', person.name);
+
+
+var obj = {};
+Object.defineProperty(obj, 'a', {
+    // value: 'a1',
+    set: function () {
+        return 'a2'
+    }
+});
