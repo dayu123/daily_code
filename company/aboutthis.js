@@ -27,3 +27,13 @@ console.log(object1.getNameFunc1.call(object1));
 console.log(object1.getNameFunc2());
 console.log(typeof object1.getNameFunc1);
 console.log(typeof object1.getNameFunc());
+
+console.log(' -------------------------------------------------  ');
+function m(method) {
+    var a = {};
+    a.m = method;
+    method();
+    a.m();
+}
+
+m(function () { console.log(this) })
