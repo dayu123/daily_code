@@ -12,7 +12,13 @@ console.log(Math.floor(num1));
 console.log(Math.ceil(num1));
 console.log(Math.round(num1));
 
+function zaoqi() {
+    console.log('函数声明', '函数声明提升')
+}
 
+var zaoshui = function () {
+    console.log('函数表达式');
+}
 
 
 
