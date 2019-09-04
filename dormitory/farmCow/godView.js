@@ -24,14 +24,7 @@ class godView {
         });
 
         console.log('活着的牛', liveCowAry.length, liveCowAry)
-
-
     }
-
-
-
-
-
 
 }
 

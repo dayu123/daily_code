@@ -1,4 +1,3 @@
-
 class cowBase {
     constructor(age) {
         this.age = age || 0;
@@ -19,9 +18,6 @@ class cowBase {
     checkHp() {
         return this.age < 16;
     }
-
-
-
 
 }
 

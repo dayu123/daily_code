@@ -29,9 +29,4 @@ class farm {
         let childCow = new cowBase(5);
         this.cowAry.push(childCow);
     }
-
-
-
 }
-
-new farm();
