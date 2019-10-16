@@ -1,0 +1,1 @@
+Promise 当遇到第一个resolve 时，就回结束，不管第二个resolve的。
