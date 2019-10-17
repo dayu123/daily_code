@@ -21,7 +21,11 @@ var zaoshui = function () {
 }
 
 
+var ary1 = [{ x: 3, y: 4 }, { x: 1, y: 2 }];
+var ary2 = [{ x: 1, y: 2 }, { x: 3, y: 4 }];
 
+var equal1 = _.isEqual(ary1, ary2);
+console.log('equal1', equal1)
 
 
 
